@@ -1,15 +1,18 @@
 import './styles.css';
-import greeting from './greeting.js';
+import homePage from './home';
+import menuPage from './menu';
+import aboutPage from './about';
+import contactPage from './contact';
 
-document.body.appendChild(greeting());
+const homeBtn = document.querySelector('#home');
+const menuBtn = document.querySelector('#menu');
+const aboutBtn = document.querySelector('#about');
+const contactBtn = document.querySelector('#contact');
 
-/* 
-  We can import images file using like this in our module
-*/
+// Always load the home page first
+homePage();
 
-// import odinImage from "./odin.png";
-   
-// const image = document.createElement("img");
-// image.src = odinImage;
-   
-// document.body.appendChild(image);
+homeBtn.addEventListener('click', homePage);
+menuBtn.addEventListener('click', menuPage);
+aboutBtn.addEventListener('click', aboutPage);
+contactBtn.addEventListener('click', contactPage);
