@@ -26,6 +26,7 @@ body {
   background: var(--background-clr);
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 header {
@@ -42,7 +43,7 @@ header {
   h1 {
     font-weight: 500;
   }
-  
+
   .logo {
     display: flex;
     gap: 10px;
