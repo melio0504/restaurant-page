@@ -13,9 +13,12 @@
   --secondary-clr: #A9C3AB;
   --tertiary-clr: #94b4a3;
   --background-clr: #F3F1E4;
+  --button-color: #4AAC78;
   --font-family: "Inter", san-serif;
   --font-light-clr: #FFFFFF;
   --title-size: 1.5rem;
+  --subheading-size: 1.5rem;
+  --hero-text-size: 4rem;
   --nav-size: 1.2rem;
 }
 
@@ -73,8 +76,45 @@ header {
   }
 }
 
-.content {
-  /* TODO: Add styling for the content */
+#content {
+  padding-top: 8vh;
+
+  .hero-section {
+    background: var(--primary-clr);
+    color: var(--font-light-clr);
+    display: flex;
+    padding: 10px 120px 10px 120px;
+
+    .call-to-action {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: var(--hero-text-size);
+      }
+
+      h2 {
+        font-size: var(--subheading-size);
+        font-weight: 400;
+      }
+    }
+
+    .cta-button {
+      background: var(--button-color);
+      color: var(--font-light-clr);
+      font-size: calc(var(--subheading-size) - 5px);
+      padding: 15px;
+      width: 170px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    img {
+      width: 716px;
+      height: 573px;
+    }
+  }
 }
 
 footer {
