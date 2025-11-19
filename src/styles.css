@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -7,10 +9,60 @@
 }
 
 :root {
-  /* Add variables here */
+  --primary-clr: #4C763B;
+  --secondary-clr: #A9C3AB;
+  --tertiary-clr: #94b4a3;
+  --background-clr: #F3F1E4;
+  --font-family: "Inter", san-serif;
+  --title-size: 1.5rem;
+  --nav-size: 1.2rem;
 }
 
 body {
-  min-height: 100vh;
+  min-height: 200vh;
   line-height: 1.4;
+  font-family: var(--font-family);
+  background: var(--background-clr);
+}
+
+header {
+  position: fixed;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  gap: 200px;
+  height: 8vh;
+  width: 100vw;
+  line-height: 1.4;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  place-items: center;
+
+  h1 {
+    font-size: var(--title-size);
+  }
+}
+
+nav {
+  display: flex;
+  gap: 52px;
+
+  > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: var(--nav-size);
+  }
+}
+
+.content {
+
+}
+
+footer {
+
 }
