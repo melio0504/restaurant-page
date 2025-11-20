@@ -88,26 +88,36 @@ header {
     .call-to-action {
       display: flex;
       flex-direction: column;
+      margin-top: 30px;
 
       h1 {
         font-size: var(--hero-text-size);
+        margin: 0;
+        
       }
 
       h2 {
         font-size: var(--subheading-size);
         font-weight: 400;
+        padding-right: 30px;
       }
-    }
 
-    .cta-button {
-      background: var(--button-color);
-      color: var(--font-light-clr);
-      font-size: calc(var(--subheading-size) - 5px);
-      padding: 15px;
-      width: 170px;
-      border-radius: 20px;
-      border: none;
-      cursor: pointer;
+      .cta-button {
+        background: var(--button-color);
+        color: var(--font-light-clr);
+        font-size: calc(var(--subheading-size) - 5px);
+        padding: 15px;
+        margin-top: 50px;
+        width: 170px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
 
     img {
