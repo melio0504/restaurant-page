@@ -7,37 +7,37 @@ import square1Food from '../public/images/square-1-food.png';
 import square2Food from '../public/images/square-2-food.png';
 
 const homePage = () => {
-  const contentDiv = document.querySelector('#content')
-  const heroSection = document.createElement('section');
-  const cta = document.createElement('div');
+  const content = document.querySelector('.content');
+  content.innerHTML = ''; 
 
+  // Hero Section
+  const heroSection = document.createElement('section');
   heroSection.classList.add('hero-section');
+
+  const cta = document.createElement('div');
   cta.classList.add('call-to-action');
 
-  const header1 = document.createElement('h1');
-  const header2 = document.createElement('h1');
-  header1.textContent = 'Fresh Bread';
-  header2.textContent = 'and Coffee';
+  const h1a = document.createElement('h1');
+  h1a.textContent = 'Fresh Bread';
 
-  const subheader = document.createElement('h2');
-  subheader.textContent = 'Experience fresh, artisan bread paired with rich, thoughtfully brewed coffee. Simple comfort, made with care.';
+  const h1b = document.createElement('h1');
+  h1b.textContent = 'and Coffee';
 
-  const ctaBtn = document.createElement('button');
-  ctaBtn.classList.add('cta-button');
-  ctaBtn.textContent = 'View our Menu';
+  const h2 = document.createElement('h2');
+  h2.textContent = 'Experience fresh, artisan bread paired with rich, thoughtfully brewed coffee. Simple comfort, made with care.';
 
-  const heroPicture = document.createElement('img');
-  heroPicture.src = heroImage;
-  heroPicture.alt = 'hero-picture';
-  heroPicture.draggable = false;
+  const ctaButton = document.createElement('button');
+  ctaButton.classList.add('cta-button');
+  ctaButton.textContent = 'View our Menu';
 
-  contentDiv.appendChild(heroSection);
-  heroSection.appendChild(cta);
-  heroSection.appendChild(heroPicture);
-  cta.appendChild(header1);
-  cta.appendChild(header2);
-  cta.appendChild(subheader);
-  cta.appendChild(ctaBtn);
+  cta.append(h1a, h1b, h2, ctaButton);
+
+  const heroImg = document.createElement('img');
+  heroImg.src = heroImage;
+  heroImg.alt = 'hero-picture';
+  heroImg.draggable = false;
+
+  heroSection.append(cta, heroImg);
 };
 
 export default homePage;
