@@ -67,6 +67,39 @@ const homePage = () => {
 
   quoteCard.append(quoteP, quotePfp, quoteName);
   quoteSection.append(storeImg, quoteCard);
+
+  // Grid Section
+  const gridSection = document.createElement('section');
+  gridSection.classList.add('grid-section');
+
+  const imgPortrait = document.createElement('img');
+  imgPortrait.src = portraitFood;
+  imgPortrait.id = 'potrait';
+  imgPortrait.draggable = false;
+
+  const imgLandscape = document.createElement('img');
+  imgLandscape.src = landscapeFood;
+  imgLandscape.id = 'landscape';
+  imgLandscape.draggable = false;
+
+  const imgSquare1 = document.createElement('img');
+  imgSquare1.src = square1Food;
+  imgSquare1.id = 'square-1';
+  imgSquare1.draggable = false;
+
+  const imgSquare2 = document.createElement('img');
+  imgSquare2.src = square2Food;
+  imgSquare2.id = 'square-2';
+  imgSquare2.draggable = false;
+
+  gridSection.append(imgPortrait, imgLandscape, imgSquare1, imgSquare2);
+
+  content.append(heroSection, quoteSection, gridSection);
+
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
 };
 
 export default homePage;
