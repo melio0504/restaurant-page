@@ -7,7 +7,7 @@ import square1Food from '../public/images/square-1-food.png';
 import square2Food from '../public/images/square-2-food.png';
 
 const homePage = () => {
-  const content = document.querySelector('.content');
+  const content = document.querySelector('#content');
   content.innerHTML = ''; 
 
   // Hero Section
