@@ -38,6 +38,35 @@ const homePage = () => {
   heroImg.draggable = false;
 
   heroSection.append(cta, heroImg);
+
+  // Quote Section
+  const quoteSection = document.createElement('section');
+  quoteSection.classList.add('quote-section');
+
+  const storeImg = document.createElement('img');
+  storeImg.src = storePicture;
+  storeImg.alt = 'store-picture';
+  storeImg.width = 600;
+  storeImg.height = 400;
+  storeImg.draggable = false;
+
+  const quoteCard = document.createElement('article');
+  quoteCard.classList.add('quote-card');
+
+  const quoteP = document.createElement('p');
+  quoteP.textContent = '“Orodata Resto always delivers fresh bread, great coffee, and a cozy experience.”';
+
+  const quotePfp = document.createElement('img');
+  quotePfp.src = pfpQuote;
+  quotePfp.alt = 'pfp-quote';
+  quotePfp.width = 60;
+  quotePfp.height = 60;
+
+  const quoteName = document.createElement('p');
+  quoteName.textContent = 'Neki Minaj';
+
+  quoteCard.append(quoteP, quotePfp, quoteName);
+  quoteSection.append(storeImg, quoteCard);
 };
 
 export default homePage;
