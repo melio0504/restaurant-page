@@ -189,6 +189,11 @@ header {
       img {
         width: 100%;
         height: 100%;
+        transition: 0.2s ease;
+
+        &:hover {
+          transform: scale(1.020);
+        }
       }
 
       #potrait {
