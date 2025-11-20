@@ -85,6 +85,7 @@ header {
 #content {
   padding-top: 8vh;
 
+  /* Home Page */
   .hero-section {
     background: var(--primary-clr);
     color: var(--font-light-clr);
@@ -216,6 +217,14 @@ header {
         grid-area: square-2;
       }
   }
+
+  /* Menu Page */
+
+
+  /* About Page */
+
+
+  /* Contact Page */
 }
 
 footer {
