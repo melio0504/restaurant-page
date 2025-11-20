@@ -61,6 +61,7 @@ const homePage = () => {
   quotePfp.alt = 'pfp-quote';
   quotePfp.width = 60;
   quotePfp.height = 60;
+  quotePfp.draggable = false;
 
   const quoteName = document.createElement('p');
   quoteName.textContent = 'Neki Minaj';
