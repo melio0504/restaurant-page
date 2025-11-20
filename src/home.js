@@ -1,4 +1,10 @@
-import heroImage from '../public/images/hero-picture.png'
+import heroImage from '../public/images/hero-picture.png';
+import storePicture from '../public/images/store-picture.png';
+import pfpQuote from '../public/images/neki-pfp.png';
+import portraitFood from '../public/images/potrait-food.png';
+import landscapeFood from '../public/images/landscape-food.png';
+import square1Food from '../public/images/square-1-food.png';
+import square2Food from '../public/images/square-2-food.png';
 
 const homePage = () => {
   const contentDiv = document.querySelector('#content')
