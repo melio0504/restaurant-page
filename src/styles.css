@@ -31,6 +31,10 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+
+  img {
+    user-select: none;
+  }
 }
 
 header {
