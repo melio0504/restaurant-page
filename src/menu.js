@@ -80,6 +80,7 @@ const menuPage = () => {
     const img = document.createElement('img');
     img.src = item.imageSrc;
     img.alt = item.altText;
+    img.draggable = false;
     
     const title = document.createElement('h1');
     title.textContent = item.name;
