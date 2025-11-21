@@ -254,6 +254,40 @@ header {
     }
   }
 
+  .menu-card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+      grid-template-rows: repeat(2, 1fr);
+      gap: 50px;
+      padding: 10px;
+      margin-bottom: 100px;
+      place-content: center;
+
+      .product-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 20px;
+        box-shadow: 1px 6px 16px 1px rgba(0,0,0,0.53);
+        transition: 0.3s ease;
+        cursor: pointer;
+
+        h1, p {
+          font-size: calc(var(--subheading-size) + 3px);
+          padding: 10px 0px 10px 20px;
+        }
+
+        p {
+          color: var(--primary-clr);
+          font-weight: bold;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  }
+
   /* About Page */
 
 
