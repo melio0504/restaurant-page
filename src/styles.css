@@ -457,10 +457,13 @@ footer {
     flex-direction: column;
   }
 
-  .about {
+  #content > .about {
     flex-direction: column;
+    margin: 20px;
     
     > img {
+      width: 500px;
+      height: 300px;
       margin-top: 20px;
     }
   }
@@ -474,13 +477,13 @@ footer {
     }
   }
 
-  body > footer > div.footer-content {
+  div.footer-content {
     flex-direction: column;
     place-items: center;
-  }
 
-  body > footer > div.footer-content > div.left-info {
-    margin: 0;
+    .left-info {
+      margin: 0;
+    }
   }
 }
 
