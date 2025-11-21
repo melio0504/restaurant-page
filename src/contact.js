@@ -41,6 +41,7 @@ const contactPage = () => {
   const locationImage = document.createElement('img');
   locationImage.src = locationMap; 
   locationImage.alt = 'location map';
+  locationImage.draggable = false;
 
   contactDiv.append(leftSide, rightSide);
   textDiv.append(locationHeading, locationText);
