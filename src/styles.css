@@ -220,7 +220,13 @@ header {
   }
 
   /* Menu Page */
-
+  .menu-header {
+    color: var(--font-light-clr);
+    font-size: var(--title-size);
+    background: var(--primary-clr);
+    place-items: center;
+    padding: 50px 0px 50px 0px;
+  }
 
   /* About Page */
 
