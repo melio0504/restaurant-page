@@ -312,6 +312,46 @@ header {
   }
 
   /* Contact Page */
+  .contactDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "left right right";
+    gap: 50px;
+    margin: 50px 100px 50px 100px;
+
+    .left {
+      grid-area: left;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      p {
+        font-size: var(--nav-size);
+      }
+    }
+
+    .right {
+      grid-area: right;
+      display: flex;
+      gap: 20px;
+      overflow-x: hidden;
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: calc(var(--quote-size) - 4px);
+      }
+    }
+    
+    .left, .right {
+      color: var(--font-light-clr);
+      background: var(--primary-clr);
+      border-radius: 20px;
+      padding: 30px;
+    }
+  }
 }
 
 footer {
