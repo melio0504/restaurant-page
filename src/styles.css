@@ -457,6 +457,14 @@ footer {
     flex-direction: column;
   }
 
+  .about {
+    flex-direction: column;
+    
+    > img {
+      margin-top: 20px;
+    }
+  }
+
   body > footer > div.footer-content {
     flex-direction: column;
     place-items: center;
