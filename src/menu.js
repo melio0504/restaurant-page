@@ -94,7 +94,11 @@ const menuPage = () => {
 
 
   content.append(menuHeader, menuButtonDiv, menuContainer);
-    
+  
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
 };
 
 export default menuPage;
