@@ -9,6 +9,8 @@ const aboutPage = () => {
 
   const img = document.createElement('img');
   img.src = aboutImg;
+  img.alt = 'store-img';
+  img.draggable = false;
 
   const textDiv = document.createElement('div');
   textDiv.classList.add('about-text');
