@@ -34,7 +34,7 @@ npm install
 To run the project in development mode with hot-reloading:
 
 ```bash
-npx webpack serve
+npm run dev
 ```
 
 This will start the webpack dev server. Open your browser and navigate to the URL shown in the terminal (typically `http://localhost:8080`).
