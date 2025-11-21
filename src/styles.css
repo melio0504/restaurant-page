@@ -289,7 +289,27 @@ header {
   }
 
   /* About Page */
+  .about {
+    display: flex;
+    gap: 50px;
+    place-items: center;
+    place-content: center;
+    margin: 30px 200px 100px 200px;
 
+    .about-text {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      h1 {
+        font-size: calc(var(--hero-text-size) - 10px);
+      }
+
+      p {
+        font-size: calc(var(--title-size) - 2px);
+      }
+    }
+  }
 
   /* Contact Page */
 }
